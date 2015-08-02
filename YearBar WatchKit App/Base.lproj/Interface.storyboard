@@ -17,6 +17,10 @@
                             <fontDescription key="font" type="system" weight="light" pointSize="19"/>
                         </label>
                     </items>
+                    <connections>
+                        <outlet property="daysLabel" destination="MI4-Kg-chN" id="JFo-fU-3yc"/>
+                        <outlet property="daysLeftLabel" destination="JnB-LC-cdP" id="Sfo-L0-qNO"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="164" y="217"/>
@@ -39,6 +43,11 @@
                         </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="daysCompleteLabel" destination="eb2-mi-RyS" id="Nje-6S-ieE"/>
+                        <outlet property="daysLeftLabel" destination="nad-ES-TA2" id="X3W-rS-Y8Y"/>
+                        <outlet property="totalDaysLabel" destination="0hB-vS-XGT" id="wvV-TS-qrS"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="164" y="514"/>
