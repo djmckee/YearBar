@@ -20,6 +20,7 @@
 		BAEF6A811B6E15680013F468 /* YearCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A801B6E15680013F468 /* YearCalculator.swift */; };
 		BAEF6A821B6E15680013F468 /* YearCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A801B6E15680013F468 /* YearCalculator.swift */; };
 		BAEF6A831B6E15680013F468 /* YearCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A801B6E15680013F468 /* YearCalculator.swift */; };
+		BAEF6A871B6E214D0013F468 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A861B6E214D0013F468 /* CircularProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		BAEF6A771B6E15440013F468 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		BAEF6A801B6E15680013F468 /* YearCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearCalculator.swift; sourceTree = "<group>"; };
 		BAEF6A841B6E16470013F468 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BAEF6A861B6E214D0013F468 /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularProgressView.swift; path = "iOS-Swift-Circular-Progress-View/CircularProgressView/CircularProgressView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		BAEF6A471B6E151E0013F468 /* YearBar */ = {
 			isa = PBXGroup;
 			children = (
+				BAEF6A851B6E21340013F468 /* dependencies */,
 				BAEF6A4A1B6E151E0013F468 /* AppDelegate.swift */,
 				BAEF6A4C1B6E151E0013F468 /* ViewController.swift */,
 				BAEF6A4E1B6E151E0013F468 /* Main.storyboard */,
@@ -184,6 +187,14 @@
 				BAEF6A741B6E15440013F468 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAEF6A851B6E21340013F468 /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				BAEF6A861B6E214D0013F468 /* CircularProgressView.swift */,
+			);
+			name = dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +330,7 @@
 			files = (
 				BAEF6A4D1B6E151E0013F468 /* ViewController.swift in Sources */,
 				BAEF6A811B6E15680013F468 /* YearCalculator.swift in Sources */,
+				BAEF6A871B6E214D0013F468 /* CircularProgressView.swift in Sources */,
 				BAEF6A4B1B6E151E0013F468 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,6 +566,7 @@
 				BAEF6A661B6E151E0013F468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAEF6A671B6E151E0013F468 /* Build configuration list for PBXNativeTarget "YearBarTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +575,7 @@
 				BAEF6A691B6E151E0013F468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAEF6A7C1B6E15440013F468 /* Build configuration list for PBXNativeTarget "TodayYearBar" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +584,7 @@
 				BAEF6A7E1B6E15440013F468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
