@@ -70,6 +70,7 @@
 		BAEF6A751B6E15440013F468 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		BAEF6A771B6E15440013F468 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		BAEF6A801B6E15680013F468 /* YearCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearCalculator.swift; sourceTree = "<group>"; };
+		BAEF6A841B6E16470013F468 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		BAEF6A3C1B6E151E0013F468 = {
 			isa = PBXGroup;
 			children = (
+				BAEF6A841B6E16470013F468 /* .gitignore */,
 				BAEF6A801B6E15680013F468 /* YearCalculator.swift */,
 				BAEF6A721B6E15440013F468 /* TodayYearBar */,
 				BAEF6A471B6E151E0013F468 /* YearBar */,
