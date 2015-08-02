@@ -20,14 +20,14 @@ public class YearCalculator {
         dateComponents.day = 1
         dateComponents.year = year
         
-        return dateComponents.date!
+        return NSCalendar.currentCalendar().dateFromComponents(dateComponents)!
         
     }
     
     public static func numberOfDaysInCurrentYear() -> Int {
         // get the first date of this year, and first day of next, then subtract to get number of days...
         
-        let currentDateComponents = NSCalendar.currentCalendar().components(.CalendarUnitYear, fromDate:  NSDate())
+        let currentDateComponents = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitYear, fromDate:  NSDate())
         
         let currentYear = currentDateComponents.year
         let nextYear = currentYear + 1
@@ -36,10 +36,27 @@ public class YearCalculator {
         let firstDayOfNextYear = firstDayOfYear(nextYear)
         
         // do the subtraction of the two dates...
-        let subtractedDayComponents = NSCalendar().components(NSCalendarUnit.CalendarUnitDay, fromDate: firstDayOfThisYear, toDate: firstDayOfNextYear, options: NSCalendarOptions.allZeros)
+        let subtractedDayComponents = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitDay, fromDate: firstDayOfThisYear, toDate: firstDayOfNextYear, options: NSCalendarOptions.allZeros)
         
         // and return computed days..
         return subtractedDayComponents.day
+        
+    }
+    
+    public static func currentDayNumber() -> Int {
+        // got this method logic from https://stackoverflow.com/questions/2080927/how-do-you-calculate-the-day-of-the-year-for-a-specific-date-in-objective-c and translated into swift
+        let gregorianCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
+        let dayOfTheYear = gregorianCalendar?.ordinalityOfUnit(NSCalendarUnit.CalendarUnitDay, inUnit: NSCalendarUnit.CalendarUnitYear, forDate: NSDate())
+        
+        return dayOfTheYear!
+
+        
+    }
+    
+    public static func currentYear() -> Int {
+        let currentDateComponents = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitYear, fromDate:  NSDate())
+        
+        return currentDateComponents.year
         
     }
     

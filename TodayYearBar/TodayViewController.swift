@@ -10,10 +10,46 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
+    @IBOutlet weak var progressBar:UIProgressView?
+    @IBOutlet weak var progressLabel:UILabel?
+    @IBOutlet weak var daysLeftLabel:UILabel?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
+        
+        updateProgress()
+        
+    }
+    
+    private func updateProgress() {
+        
+        let currentDay = YearCalculator.currentDayNumber()
+        let totalDays = YearCalculator.numberOfDaysInCurrentYear()
+        let currentYear = YearCalculator.currentYear()
+        
+        // set up progress bar...
+        let progress:Float = Float(Float(currentDay) / Float(totalDays))
+        print(progress)
+        progressBar?.setProgress(progress, animated: true)
+        
+        // format strings and set them too...
+        let daysString = String(format: "%d/%d", currentDay, totalDays)
+        progressLabel?.text = daysString
+        
+        let daysLeft = (totalDays - currentDay)
+        
+        var dayString = "days"
+        
+        if daysLeft == 1 {
+            dayString = "day"
+        }
+        
+        let daysLeftString = String(format: "%d %@ left of %d.", daysLeft, dayString, currentYear)
+        daysLeftLabel?.text = daysLeftString
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,7 +64,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
 
+        updateProgress()
+        
         completionHandler(NCUpdateResult.NewData)
     }
+    
+    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
+        return UIEdgeInsetsZero
+    }
+    
+
     
 }

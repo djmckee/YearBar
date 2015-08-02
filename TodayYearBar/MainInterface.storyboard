@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Today View Controller-->
@@ -18,36 +17,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="299/365" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
-                                <rect key="frame" x="20" y="25" width="280" height="22"/>
+                                <rect key="frame" x="20" y="25" width="280" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="FeS-Br-MIB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LTU-rr-4Bb">
-                                <rect key="frame" x="20" y="15" width="284" height="2"/>
+                                <rect key="frame" x="20" y="15" width="280" height="2"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="evC-zc-Hj4"/>
                                     <constraint firstAttribute="height" constant="2" id="umX-bG-VTO"/>
                                 </constraints>
                                 <color key="progressTintColor" red="0.53333333333333333" green="1" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="298 days of 2015 left." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="fQa-KR-20Q">
-                                <rect key="frame" x="20" y="52" width="280" height="21"/>
+                                <rect key="frame" x="20" y="54" width="280" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="9zt-pa-3Pp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="LTU-rr-4Bb" secondAttribute="bottom" constant="8" id="6UE-a0-UlM"/>
-                            <constraint firstItem="LTU-rr-4Bb" firstAttribute="leading" secondItem="GcN-lo-r42" secondAttribute="leading" id="EGk-Ih-dqG"/>
-                            <constraint firstAttribute="centerX" secondItem="LTU-rr-4Bb" secondAttribute="centerX" constant="-2" id="KWx-tJ-b8Z"/>
-                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="fQa-KR-20Q" secondAttribute="bottom" constant="8" id="Mbr-AB-6MU"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="4" id="TPm-Sq-p5g"/>
-                            <constraint firstItem="fQa-KR-20Q" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="5" id="fzN-hI-Q2b"/>
-                            <constraint firstItem="LTU-rr-4Bb" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="15" id="jl1-HK-qb2"/>
-                            <constraint firstItem="fQa-KR-20Q" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="4" id="lNJ-la-Imt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fQa-KR-20Q" secondAttribute="trailing" constant="4" id="sTa-JY-oxR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="4" id="u5J-am-2cj"/>
+                            <constraint firstAttribute="centerX" secondItem="fQa-KR-20Q" secondAttribute="centerX" id="8RZ-Cf-ShE"/>
+                            <constraint firstAttribute="centerX" secondItem="GcN-lo-r42" secondAttribute="centerX" id="9ih-gU-TeH"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="LTU-rr-4Bb" secondAttribute="bottom" constant="8" id="HQl-ZJ-7s1"/>
+                            <constraint firstItem="fQa-KR-20Q" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="5" id="JeD-E8-jhF"/>
+                            <constraint firstAttribute="centerX" secondItem="LTU-rr-4Bb" secondAttribute="centerX" id="saO-UU-sJ9"/>
+                            <constraint firstItem="LTU-rr-4Bb" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="15" id="wR4-sR-kMd"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
