@@ -56,6 +56,11 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="80"/>
+                    <connections>
+                        <outlet property="daysLeftLabel" destination="fQa-KR-20Q" id="fA1-9k-5Zm"/>
+                        <outlet property="progressBar" destination="LTU-rr-4Bb" id="vfy-89-EQG"/>
+                        <outlet property="progressLabel" destination="GcN-lo-r42" id="ztt-xy-nUb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
