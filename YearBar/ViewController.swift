@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
         // set up progress bar...
         let progress:Float = Float(Float(currentDay) / Float(totalDays))
-        print(progress)
+        //print(progress)
         progressCircle?.value = CGFloat(progress)
         
         // format strings and set them too...

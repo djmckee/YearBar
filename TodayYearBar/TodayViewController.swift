@@ -32,7 +32,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         // set up progress bar...
         let progress:Float = Float(Float(currentDay) / Float(totalDays))
-        print(progress)
+        //print(progress)
         progressBar?.setProgress(progress, animated: true)
         
         // format strings and set them too...
