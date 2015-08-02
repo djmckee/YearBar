@@ -13,6 +13,13 @@
 		BAEF6A521B6E151E0013F468 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEF6A511B6E151E0013F468 /* Images.xcassets */; };
 		BAEF6A551B6E151E0013F468 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAEF6A531B6E151E0013F468 /* LaunchScreen.xib */; };
 		BAEF6A611B6E151E0013F468 /* YearBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A601B6E151E0013F468 /* YearBarTests.swift */; };
+		BAEF6A711B6E15440013F468 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEF6A701B6E15440013F468 /* NotificationCenter.framework */; };
+		BAEF6A761B6E15440013F468 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A751B6E15440013F468 /* TodayViewController.swift */; };
+		BAEF6A781B6E15440013F468 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEF6A771B6E15440013F468 /* MainInterface.storyboard */; };
+		BAEF6A7B1B6E15440013F468 /* TodayYearBar.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BAEF6A6E1B6E15440013F468 /* TodayYearBar.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BAEF6A811B6E15680013F468 /* YearCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A801B6E15680013F468 /* YearCalculator.swift */; };
+		BAEF6A821B6E15680013F468 /* YearCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A801B6E15680013F468 /* YearCalculator.swift */; };
+		BAEF6A831B6E15680013F468 /* YearCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A801B6E15680013F468 /* YearCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +30,28 @@
 			remoteGlobalIDString = BAEF6A441B6E151E0013F468;
 			remoteInfo = YearBar;
 		};
+		BAEF6A791B6E15440013F468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAEF6A3D1B6E151E0013F468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAEF6A6D1B6E15440013F468;
+			remoteInfo = TodayYearBar;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAEF6A7F1B6E15440013F468 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BAEF6A7B1B6E15440013F468 /* TodayYearBar.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BAEF6A451B6E151E0013F468 /* YearBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YearBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +64,12 @@
 		BAEF6A5A1B6E151E0013F468 /* YearBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YearBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEF6A5F1B6E151E0013F468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAEF6A601B6E151E0013F468 /* YearBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearBarTests.swift; sourceTree = "<group>"; };
+		BAEF6A6E1B6E15440013F468 /* TodayYearBar.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayYearBar.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAEF6A701B6E15440013F468 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		BAEF6A741B6E15440013F468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEF6A751B6E15440013F468 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		BAEF6A771B6E15440013F468 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		BAEF6A801B6E15680013F468 /* YearCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +87,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAEF6A6B1B6E15440013F468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEF6A711B6E15440013F468 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BAEF6A3C1B6E151E0013F468 = {
 			isa = PBXGroup;
 			children = (
+				BAEF6A801B6E15680013F468 /* YearCalculator.swift */,
+				BAEF6A721B6E15440013F468 /* TodayYearBar */,
 				BAEF6A471B6E151E0013F468 /* YearBar */,
 				BAEF6A5D1B6E151E0013F468 /* YearBarTests */,
+				BAEF6A6F1B6E15440013F468 /* Frameworks */,
 				BAEF6A461B6E151E0013F468 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +115,7 @@
 			children = (
 				BAEF6A451B6E151E0013F468 /* YearBar.app */,
 				BAEF6A5A1B6E151E0013F468 /* YearBarTests.xctest */,
+				BAEF6A6E1B6E15440013F468 /* TodayYearBar.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +158,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BAEF6A6F1B6E15440013F468 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAEF6A701B6E15440013F468 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAEF6A721B6E15440013F468 /* TodayYearBar */ = {
+			isa = PBXGroup;
+			children = (
+				BAEF6A751B6E15440013F468 /* TodayViewController.swift */,
+				BAEF6A771B6E15440013F468 /* MainInterface.storyboard */,
+				BAEF6A731B6E15440013F468 /* Supporting Files */,
+			);
+			path = TodayYearBar;
+			sourceTree = "<group>";
+		};
+		BAEF6A731B6E15440013F468 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAEF6A741B6E15440013F468 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +194,12 @@
 				BAEF6A411B6E151E0013F468 /* Sources */,
 				BAEF6A421B6E151E0013F468 /* Frameworks */,
 				BAEF6A431B6E151E0013F468 /* Resources */,
+				BAEF6A7F1B6E15440013F468 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BAEF6A7A1B6E15440013F468 /* PBXTargetDependency */,
 			);
 			name = YearBar;
 			productName = YearBar;
@@ -150,6 +224,23 @@
 			productReference = BAEF6A5A1B6E151E0013F468 /* YearBarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BAEF6A6D1B6E15440013F468 /* TodayYearBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAEF6A7C1B6E15440013F468 /* Build configuration list for PBXNativeTarget "TodayYearBar" */;
+			buildPhases = (
+				BAEF6A6A1B6E15440013F468 /* Sources */,
+				BAEF6A6B1B6E15440013F468 /* Frameworks */,
+				BAEF6A6C1B6E15440013F468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayYearBar;
+			productName = TodayYearBar;
+			productReference = BAEF6A6E1B6E15440013F468 /* TodayYearBar.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +256,9 @@
 					BAEF6A591B6E151E0013F468 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = BAEF6A441B6E151E0013F468;
+					};
+					BAEF6A6D1B6E15440013F468 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -183,6 +277,7 @@
 			targets = (
 				BAEF6A441B6E151E0013F468 /* YearBar */,
 				BAEF6A591B6E151E0013F468 /* YearBarTests */,
+				BAEF6A6D1B6E15440013F468 /* TodayYearBar */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +300,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAEF6A6C1B6E15440013F468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEF6A781B6E15440013F468 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -213,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAEF6A4D1B6E151E0013F468 /* ViewController.swift in Sources */,
+				BAEF6A811B6E15680013F468 /* YearCalculator.swift in Sources */,
 				BAEF6A4B1B6E151E0013F468 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +325,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAEF6A821B6E15680013F468 /* YearCalculator.swift in Sources */,
 				BAEF6A611B6E151E0013F468 /* YearBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAEF6A6A1B6E15440013F468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEF6A831B6E15680013F468 /* YearCalculator.swift in Sources */,
+				BAEF6A761B6E15440013F468 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +346,11 @@
 			isa = PBXTargetDependency;
 			target = BAEF6A441B6E151E0013F468 /* YearBar */;
 			targetProxy = BAEF6A5B1B6E151E0013F468 /* PBXContainerItemProxy */;
+		};
+		BAEF6A7A1B6E15440013F468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAEF6A6D1B6E15440013F468 /* TodayYearBar */;
+			targetProxy = BAEF6A791B6E15440013F468 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -390,6 +509,30 @@
 			};
 			name = Release;
 		};
+		BAEF6A7D1B6E15440013F468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TodayYearBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BAEF6A7E1B6E15440013F468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TodayYearBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +558,14 @@
 			buildConfigurations = (
 				BAEF6A681B6E151E0013F468 /* Debug */,
 				BAEF6A691B6E151E0013F468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAEF6A7C1B6E15440013F468 /* Build configuration list for PBXNativeTarget "TodayYearBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAEF6A7D1B6E15440013F468 /* Debug */,
+				BAEF6A7E1B6E15440013F468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
