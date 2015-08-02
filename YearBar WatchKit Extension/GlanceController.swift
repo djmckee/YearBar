@@ -24,7 +24,28 @@ class GlanceController: WKInterfaceController {
     }
     
     private func update() {
+        let currentDay = YearCalculator.currentDayNumber()
+        let totalDays = YearCalculator.numberOfDaysInCurrentYear()
+        let currentYear = YearCalculator.currentYear()
         
+        // format strings and set them too...
+        let currentDayString = String(format: "%d", currentDay)
+        daysCompleteLabel?.setText(currentDayString)
+        
+        let totalDaysString = String(format: "/%d", totalDays)
+        totalDaysLabel?.setText(totalDaysString)
+        
+        let daysLeft = (totalDays - currentDay)
+        
+        var dayString = "days"
+        
+        if daysLeft == 1 {
+            dayString = "day"
+        }
+        
+        let daysLeftString = String(format: "%d %@ left of %d.", daysLeft, dayString, currentYear)
+        daysLeftLabel?.setText(daysLeftString)
+
     }
 
     override func willActivate() {
