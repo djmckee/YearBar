@@ -20,9 +20,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
         
-        self.preferredContentSize = CGSizeMake(0, 72)
+        self.preferredContentSize = CGSize(width: 0, height: 72)
         
         updateProgress()
+        
+        
         
         
     }
