@@ -14,13 +14,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var progressBar:UIProgressView?
     @IBOutlet weak var progressLabel:UILabel?
     @IBOutlet weak var daysLeftLabel:UILabel?
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
         
+        self.preferredContentSize = CGSizeMake(0, 72)
+        
         updateProgress()
+        
         
     }
     
@@ -59,11 +62,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
         // Perform any setup necessary in order to update the view.
-
+        
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
-
+        
         updateProgress()
         
         completionHandler(NCUpdateResult.NewData)
@@ -73,6 +76,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         return UIEdgeInsetsZero
     }
     
-
+    
     
 }

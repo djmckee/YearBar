@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAA8513D1B7166F20030114A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEF6A701B6E15440013F468 /* NotificationCenter.framework */; };
+		BAA851421B7166F20030114A /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA851411B7166F20030114A /* TodayViewController.swift */; };
+		BAA851441B7166F20030114A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA851431B7166F20030114A /* MainInterface.storyboard */; };
+		BAA851471B7166F20030114A /* YearBarToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BAA8513C1B7166F20030114A /* YearBarToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BAA8514B1B7167340030114A /* YearCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A801B6E15680013F468 /* YearCalculator.swift */; };
 		BAEF6A4B1B6E151E0013F468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A4A1B6E151E0013F468 /* AppDelegate.swift */; };
 		BAEF6A4D1B6E151E0013F468 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A4C1B6E151E0013F468 /* ViewController.swift */; };
 		BAEF6A501B6E151E0013F468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEF6A4E1B6E151E0013F468 /* Main.storyboard */; };
 		BAEF6A521B6E151E0013F468 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEF6A511B6E151E0013F468 /* Images.xcassets */; };
 		BAEF6A551B6E151E0013F468 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAEF6A531B6E151E0013F468 /* LaunchScreen.xib */; };
 		BAEF6A611B6E151E0013F468 /* YearBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A601B6E151E0013F468 /* YearBarTests.swift */; };
-		BAEF6A711B6E15440013F468 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEF6A701B6E15440013F468 /* NotificationCenter.framework */; };
-		BAEF6A761B6E15440013F468 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A751B6E15440013F468 /* TodayViewController.swift */; };
-		BAEF6A781B6E15440013F468 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEF6A771B6E15440013F468 /* MainInterface.storyboard */; };
-		BAEF6A7B1B6E15440013F468 /* TodayYearBar.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BAEF6A6E1B6E15440013F468 /* TodayYearBar.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BAEF6A811B6E15680013F468 /* YearCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A801B6E15680013F468 /* YearCalculator.swift */; };
 		BAEF6A821B6E15680013F468 /* YearCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A801B6E15680013F468 /* YearCalculator.swift */; };
-		BAEF6A831B6E15680013F468 /* YearCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A801B6E15680013F468 /* YearCalculator.swift */; };
 		BAEF6A871B6E214D0013F468 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6A861B6E214D0013F468 /* CircularProgressView.swift */; };
 		BAEF6B011B6E28A90013F468 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6B001B6E28A90013F468 /* InterfaceController.swift */; };
 		BAEF6B031B6E28A90013F468 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEF6B021B6E28A90013F468 /* GlanceController.swift */; };
@@ -32,19 +32,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BAA851451B7166F20030114A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAEF6A3D1B6E151E0013F468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAA8513B1B7166F20030114A;
+			remoteInfo = YearBarToday;
+		};
 		BAEF6A5B1B6E151E0013F468 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BAEF6A3D1B6E151E0013F468 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BAEF6A441B6E151E0013F468;
 			remoteInfo = YearBar;
-		};
-		BAEF6A791B6E15440013F468 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BAEF6A3D1B6E151E0013F468 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BAEF6A6D1B6E15440013F468;
-			remoteInfo = TodayYearBar;
 		};
 		BAEF6B0A1B6E28A90013F468 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -70,7 +70,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				BAEF6B161B6E28A90013F468 /* YearBar WatchKit Extension.appex in Embed App Extensions */,
-				BAEF6A7B1B6E15440013F468 /* TodayYearBar.appex in Embed App Extensions */,
+				BAA851471B7166F20030114A /* YearBarToday.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +78,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BAA8513C1B7166F20030114A /* YearBarToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YearBarToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA851401B7166F20030114A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA851411B7166F20030114A /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		BAA851431B7166F20030114A /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		BAEF6A451B6E151E0013F468 /* YearBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YearBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEF6A491B6E151E0013F468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAEF6A4A1B6E151E0013F468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,11 +92,7 @@
 		BAEF6A5A1B6E151E0013F468 /* YearBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YearBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEF6A5F1B6E151E0013F468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAEF6A601B6E151E0013F468 /* YearBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearBarTests.swift; sourceTree = "<group>"; };
-		BAEF6A6E1B6E15440013F468 /* TodayYearBar.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayYearBar.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEF6A701B6E15440013F468 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		BAEF6A741B6E15440013F468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAEF6A751B6E15440013F468 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		BAEF6A771B6E15440013F468 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		BAEF6A801B6E15680013F468 /* YearCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearCalculator.swift; sourceTree = "<group>"; };
 		BAEF6A841B6E16470013F468 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BAEF6A861B6E214D0013F468 /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularProgressView.swift; path = "iOS-Swift-Circular-Progress-View/CircularProgressView/CircularProgressView.swift"; sourceTree = SOURCE_ROOT; };
@@ -108,6 +108,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BAA851391B7166F20030114A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA8513D1B7166F20030114A /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAEF6A421B6E151E0013F468 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,14 +130,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAEF6A6B1B6E15440013F468 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAEF6A711B6E15440013F468 /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BAEF6AF91B6E28A90013F468 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,16 +140,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BAA8513E1B7166F20030114A /* YearBarToday */ = {
+			isa = PBXGroup;
+			children = (
+				BAA851411B7166F20030114A /* TodayViewController.swift */,
+				BAA851431B7166F20030114A /* MainInterface.storyboard */,
+				BAA8513F1B7166F20030114A /* Supporting Files */,
+			);
+			path = YearBarToday;
+			sourceTree = "<group>";
+		};
+		BAA8513F1B7166F20030114A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAA851401B7166F20030114A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BAEF6A3C1B6E151E0013F468 = {
 			isa = PBXGroup;
 			children = (
 				BAEF6A841B6E16470013F468 /* .gitignore */,
 				BAEF6A801B6E15680013F468 /* YearCalculator.swift */,
-				BAEF6A721B6E15440013F468 /* TodayYearBar */,
 				BAEF6A471B6E151E0013F468 /* YearBar */,
 				BAEF6A5D1B6E151E0013F468 /* YearBarTests */,
 				BAEF6AFD1B6E28A90013F468 /* YearBar WatchKit Extension */,
 				BAEF6B0C1B6E28A90013F468 /* YearBar WatchKit App */,
+				BAA8513E1B7166F20030114A /* YearBarToday */,
 				BAEF6A6F1B6E15440013F468 /* Frameworks */,
 				BAEF6A461B6E151E0013F468 /* Products */,
 			);
@@ -160,9 +178,9 @@
 			children = (
 				BAEF6A451B6E151E0013F468 /* YearBar.app */,
 				BAEF6A5A1B6E151E0013F468 /* YearBarTests.xctest */,
-				BAEF6A6E1B6E15440013F468 /* TodayYearBar.appex */,
 				BAEF6AFC1B6E28A90013F468 /* YearBar WatchKit Extension.appex */,
 				BAEF6B081B6E28A90013F468 /* YearBar WatchKit App.app */,
+				BAA8513C1B7166F20030114A /* YearBarToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,24 +232,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BAEF6A721B6E15440013F468 /* TodayYearBar */ = {
-			isa = PBXGroup;
-			children = (
-				BAEF6A751B6E15440013F468 /* TodayViewController.swift */,
-				BAEF6A771B6E15440013F468 /* MainInterface.storyboard */,
-				BAEF6A731B6E15440013F468 /* Supporting Files */,
-			);
-			path = TodayYearBar;
-			sourceTree = "<group>";
-		};
-		BAEF6A731B6E15440013F468 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BAEF6A741B6E15440013F468 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		BAEF6A851B6E21340013F468 /* dependencies */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +280,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BAA8513B1B7166F20030114A /* YearBarToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA851481B7166F20030114A /* Build configuration list for PBXNativeTarget "YearBarToday" */;
+			buildPhases = (
+				BAA851381B7166F20030114A /* Sources */,
+				BAA851391B7166F20030114A /* Frameworks */,
+				BAA8513A1B7166F20030114A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YearBarToday;
+			productName = YearBarToday;
+			productReference = BAA8513C1B7166F20030114A /* YearBarToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BAEF6A441B6E151E0013F468 /* YearBar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAEF6A641B6E151E0013F468 /* Build configuration list for PBXNativeTarget "YearBar" */;
@@ -292,8 +309,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				BAEF6A7A1B6E15440013F468 /* PBXTargetDependency */,
 				BAEF6B151B6E28A90013F468 /* PBXTargetDependency */,
+				BAA851461B7166F20030114A /* PBXTargetDependency */,
 			);
 			name = YearBar;
 			productName = YearBar;
@@ -317,23 +334,6 @@
 			productName = YearBarTests;
 			productReference = BAEF6A5A1B6E151E0013F468 /* YearBarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BAEF6A6D1B6E15440013F468 /* TodayYearBar */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BAEF6A7C1B6E15440013F468 /* Build configuration list for PBXNativeTarget "TodayYearBar" */;
-			buildPhases = (
-				BAEF6A6A1B6E15440013F468 /* Sources */,
-				BAEF6A6B1B6E15440013F468 /* Frameworks */,
-				BAEF6A6C1B6E15440013F468 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TodayYearBar;
-			productName = TodayYearBar;
-			productReference = BAEF6A6E1B6E15440013F468 /* TodayYearBar.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 		BAEF6AFB1B6E28A90013F468 /* YearBar WatchKit Extension */ = {
 			isa = PBXNativeTarget;
@@ -377,15 +377,15 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = djmcke;
 				TargetAttributes = {
+					BAA8513B1B7166F20030114A = {
+						CreatedOnToolsVersion = 6.4;
+					};
 					BAEF6A441B6E151E0013F468 = {
 						CreatedOnToolsVersion = 6.4;
 					};
 					BAEF6A591B6E151E0013F468 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = BAEF6A441B6E151E0013F468;
-					};
-					BAEF6A6D1B6E15440013F468 = {
-						CreatedOnToolsVersion = 6.4;
 					};
 					BAEF6AFB1B6E28A90013F468 = {
 						CreatedOnToolsVersion = 6.4;
@@ -410,14 +410,22 @@
 			targets = (
 				BAEF6A441B6E151E0013F468 /* YearBar */,
 				BAEF6A591B6E151E0013F468 /* YearBarTests */,
-				BAEF6A6D1B6E15440013F468 /* TodayYearBar */,
 				BAEF6AFB1B6E28A90013F468 /* YearBar WatchKit Extension */,
 				BAEF6B071B6E28A90013F468 /* YearBar WatchKit App */,
+				BAA8513B1B7166F20030114A /* YearBarToday */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BAA8513A1B7166F20030114A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA851441B7166F20030114A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAEF6A431B6E151E0013F468 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,14 +440,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BAEF6A6C1B6E15440013F468 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAEF6A781B6E15440013F468 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +464,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BAA851381B7166F20030114A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA8514B1B7167340030114A /* YearCalculator.swift in Sources */,
+				BAA851421B7166F20030114A /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAEF6A411B6E151E0013F468 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,15 +493,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAEF6A6A1B6E15440013F468 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAEF6A831B6E15680013F468 /* YearCalculator.swift in Sources */,
-				BAEF6A761B6E15440013F468 /* TodayViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BAEF6AF81B6E28A90013F468 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,15 +506,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BAA851461B7166F20030114A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAA8513B1B7166F20030114A /* YearBarToday */;
+			targetProxy = BAA851451B7166F20030114A /* PBXContainerItemProxy */;
+		};
 		BAEF6A5C1B6E151E0013F468 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BAEF6A441B6E151E0013F468 /* YearBar */;
 			targetProxy = BAEF6A5B1B6E151E0013F468 /* PBXContainerItemProxy */;
-		};
-		BAEF6A7A1B6E15440013F468 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BAEF6A6D1B6E15440013F468 /* TodayYearBar */;
-			targetProxy = BAEF6A791B6E15440013F468 /* PBXContainerItemProxy */;
 		};
 		BAEF6B0B1B6E28A90013F468 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -556,6 +556,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BAA851491B7166F20030114A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YearBarToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BAA8514A1B7166F20030114A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = YearBarToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		BAEF6A621B6E151E0013F468 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -691,30 +717,6 @@
 			};
 			name = Release;
 		};
-		BAEF6A7D1B6E15440013F468 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TodayYearBar/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		BAEF6A7E1B6E15440013F468 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TodayYearBar/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		BAEF6B171B6E28A90013F468 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -774,6 +776,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BAA851481B7166F20030114A /* Build configuration list for PBXNativeTarget "YearBarToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAA851491B7166F20030114A /* Debug */,
+				BAA8514A1B7166F20030114A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BAEF6A401B6E151E0013F468 /* Build configuration list for PBXProject "YearBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -797,15 +807,6 @@
 			buildConfigurations = (
 				BAEF6A681B6E151E0013F468 /* Debug */,
 				BAEF6A691B6E151E0013F468 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BAEF6A7C1B6E15440013F468 /* Build configuration list for PBXNativeTarget "TodayYearBar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BAEF6A7D1B6E15440013F468 /* Debug */,
-				BAEF6A7E1B6E15440013F468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
